@@ -1,0 +1,233 @@
+body {
+    /*background: url("./images/photo_bg.jpg") no-repeat center center fixed;*/
+    background: url("./images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Roboto,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+}
+.card
+{
+    margin: 12% 30%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    background-color: #fff;
+}
+.card-block {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.card .form-header {
+    color: #fff;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+}
+.purple.darken-4 {
+    background-color: #4a148c !important;
+}
+.card .form-header h3 {
+    margin: 0;
+    padding: .7rem;
+}
+.card-block h3{
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    display: inline-block;
+    }
+.md-form {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.fa-lock::before {
+    content: "\f023";
+}
+.md-form .prefix ~ input{
+    margin-left: 3rem;
+    width: calc(100% - 3rem);
+}
+.md-form .prefix{
+    position:absolute;
+    width:3rem;
+    font-size:2rem;
+    -webkit-transition:color .2s;
+    transition:color .2s
+}
+
+.md-form .prefix.active
+{
+    color: #4285F4;
+}
+.md-form .prefix~input{
+    margin-left:3rem;
+    width:92%;
+    width:-webkit-calc(100% - 3rem);
+    width:calc(100% - 3rem)
+}
+@media only screen and (max-width:992px){
+    .md-form .prefix~input{
+        width:86%;
+        width:-webkit-calc(100% - 3rem);
+        width:calc(100% - 3rem)
+    }
+}
+@media only screen and (max-width:600px){
+    .md-form .prefix~input{
+        width:80%;
+        width:-webkit-calc(100% - 3rem);
+        width:calc(100% - 3rem)
+    }
+}
+input[type="text"]
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: 0;
+    height: 2.1rem;
+    font-size: 1rem;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all .3s;
+}
+.form-control {
+    padding: .5rem 0 .6rem;
+    line-height: 1.5;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+    color: #464a4c;
+    background-clip: padding-box;
+    display: block;
+    overflow: visible;
+}
+label {
+    display: inline-block;
+    touch-action: manipulation;
+    margin-bottom: .5rem;
+}
+.md-form .prefix ~ label {
+
+    margin-left: 3rem;
+
+}
+.md-form label.active {
+
+    font-size: .8rem;
+    -webkit-transform: translateY(-140%);
+    -ms-transform: translateY(-140%);
+    transform: translateY(-140%);
+
+}
+.md-form label {
+    color: #757575;
+    position: absolute;
+    top: .8rem;
+    left: 0;
+    font-size: 1rem;
+    cursor: text;
+    transition: .2s ease-out;
+}
+input[type="password"]
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: 0;
+    height: 2.1rem;
+    font-size: 1rem;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all .3s;
+}
+input
+{
+    touch-action: manipulation;
+}
+.text-center 
+{
+    text-align: center !important;
+}
+.btn-deep-purple 
+{
+    background: #311b92;
+}
+.btn {
+    font-size: .8rem;
+    padding: .85rem 2.13rem;
+    border-radius: 2px;
+    border: 0;
+    transition: .2s ease-out;
+    color: #fff !important;
+    margin: 6px;
+    white-space: normal !important;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    display: inline-block;
+    line-height: 1.25;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+}
+input[type="text"] + label::after, 
+{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 65px;
+    opacity: 0;
+    transition: .2s opacity ease-out,.2s color ease-out;
+}
+
+input[type="text"]:focus:not([readonly]),input[type="password"]:focus:not([readonly])
+{
+    border-bottom: 1px solid #4285F4;
+    box-shadow: 0 1px 0 0 #4285F4;
+}
+.form-control:focus {
+    background: 0 0;
+}
+.form-control:focus {
+    color: #464a4c;
+    border-color: #5cb3fd;
+    outline: 0;
+}
+input[type="text"] + label::after
+{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 65px;
+    opacity: 0;
+    transition: .2s opacity ease-out,.2s color ease-out;
+}
+.md-form label.active
+{
+    font-size: .8rem;
+    transform: translateY(-140%);
+}
+input[type="email"]:focus:not([readonly]) + label,
+input[type="password"]:focus:not([readonly]) + label,
+input[type="text"]:focus:not([readonly]) + label
+{
+    color: #4285F4;
+}

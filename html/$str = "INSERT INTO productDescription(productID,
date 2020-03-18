@@ -1,0 +1,6 @@
+ $str = "INSERT INTO productDescription(productID,key,productValue) VALUES";
+           for($i=0;$i<count($_key);$i++)
+           {
+              $str.="($product_ID,'$getObj->key[$i]','$getObj->value[$i]'),";
+           }
+           $str =substr($str,0,-1);
